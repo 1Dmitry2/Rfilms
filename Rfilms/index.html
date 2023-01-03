@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rfilms</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">
+          <img src="./img/Rfilms.svg" alt="Logo" />
+        </a>
+        <div class="end_bx">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Фильмы</a></li>
+            <li><a href="#">Сериалы</a></li>
+            <li><a href="#">Категории </a>
+              <div class="list">
+                <a href="#">Тренды</a>
+                <a href="#">Популярные</a>
+                <a href="#">Предпочтения</a>
+                <a href="#">Добавленные</a>
+                <a href="#">Болливуд</a>
+              </div>
+            </li>
+          </ul>
+          <div class="search">
+            <input id="search" type="text" placeholder="Поиск..." />
+            <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
+            <div class="search_bx2">
+              
+            </div>
+          </div>
+          <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="user">
+            <img src="./img/user.png" alt="" />
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <h6>Продолжительность: <span id="header_dur">1ч 47мин</span></h6>
+        <h3 id="header_gen">
+          <i class="fa-solid fa-star"></i>6.5
+          <span>Акция / Преключение / Научная фантастика</span>
+        </h3>
+        <h1 id="header_title">Rampage</h1>
+        <p id="header_pra">
+          Rampage - американский научно-фантастический приключенческий фильм о
+          монстрах 2018 года, снятый Брэдом Пейтоном и основанный на одноименной
+          серии видеоигр от Midway Games по сценарию Райана Энгла, Карлтона
+          Кьюза, Райана Дж. Кондала и Адама Штыкиля.
+        </p>
+        <div class="btns">
+          <a href="#video"><button id="play_btn"><i class="fas fa-solid fa-play"></i>Смотреть</button></a>
+          <button>
+            <i class="fas fa-solid fa-plus"></i>Добавить в плейлист
+          </button>
+        </div>
+      </div>
+      <div class="slider_btns">
+        <h6 class="slider"></h6>
+        <h6 class="slider"></h6>
+        <h6 class="slider"></h6>
+      </div>
+    </header>
+    <div class="tranding_bx">
+      <li>
+        <a class="active" href="#"
+          ><i class="fas fa-regular fa-angles-up"></i> В тренде<span></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fas fa-solid fa-fire"></i> Популярные<span></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fas fa-solid fa-star"></i> Предпочтения<span></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fas fa-solid fa-plus"></i> Недавно добавленные<span></span
+        ></a>
+      </li>
+    </div>
+    <div id="cato_bx" class="cato_bx">
+      <button id="action">Боевик</button>
+      <button id="crime1">Криминал</button>
+      <button id="adventures1">Приключения</button>
+      <button id="biology1">Биология</button>
+      <button id="animation1">Анимация</button>
+      <button id="comedy1">Комедии</button>
+      <button id="documentaries1">Документалистика</button>
+      <button id="drama1">Драма</button>
+      <button id="serials1">Сериалы</button>
+      <button id="eth1">18+</button>
+      <button id="science_fiction1">Научная-фантастика</button>
+      <button id="horror1">Хорроры</button>
+      <button id="reality_show1">Реалити-шоу</button>
+      <button id="family1">Семейные</button>
+      <button id="melodrama1">Мелодрама</button>
+      <div class="cato_left_right">
+        <i id="left_scroll" class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="cato_left_right">
+        <i id="right_scroll" class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+    <!-- movies -->
+    <div id="movies" class="movie_bx_1">
+      <button id="left">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <button id="right">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <div id="action_bx" class="movie_bxx"></div>
+      <div id="crime_bx" class="movie_bxx"></div>
+      <div id="adventures_bx" class="movie_bxx"></div>
+      <div id="biology_bx" class="movie_bxx"></div>
+      <div id="animation_bx" class="movie_bxx"></div>
+      <div id="comedy_bx" class="movie_bxx"></div>
+      <div id="documentaries_bx" class="movie_bxx"></div>
+      <div id="drama_bx" class="movie_bxx"></div>
+      <div id="serials_bx" class="movie_bxx"></div>
+      <div id="eth_bx" class="movie_bxx"></div>
+      <div id="science_fiction_bx" class="movie_bxx"></div>
+      <div id="horror_bx" class="movie_bxx"></div>
+      <div id="reality_show_bx" class="movie_bxx"></div>
+      <div id="family_bx" class="movie_bxx"></div>
+      <div id="melodrama_bx" class="movie_bxx"></div>
+    </div>
+    <!-- video -->
+    <div class="video_bx">
+      <video id="video" src="./video/v1.mp4"></video>
+      <div class="control">
+        <div class="play_redo">
+          <i id="play" class="bi bi-play-fill"></i>
+          <i id="sec_30" class="bi bi-arrow-clockwise"></i>
+          <span>10</span>
+        </div>
+        <div class="start_seekbar_end">
+          <span id="start_time"> 1:14</span>
+          <div class="seek">
+          <input id="seek" type="range" value="0">
+          <h5 id="seek_2"></h5>
+          <h4></h4>
+          <h6 id="seek_dot"></h6>
+        </div>
+          <span id="end_time">2:38</span>
+        </div>
+        <div class="cc_vol-screen">
+          <i class="bi bi-badge-cc-fill"></i>
+          <i id="vol_icon" class="bi bi-volume-up-fill"></i>
+          <input type="range" name="vol" id="vol">
+          <i id="full_screen" class="bi bi-arrows-fullscreen"></i>
+        </div>
+      </div>
+      <h4 class="title_video">Rampage</h4>
+     <div class="video_list">
+      <img class="video_1" src="./img/rampp.webp" alt="" >
+      <img class="video_1" src="./img/jack.jpeg" alt="" >
+      <img class="video_1" src="./img/myra.jpg" alt="" >
+     </div>
+    </div>
+    <div class="tranding_bx" style="margin-top: 20px;">
+      <li>
+        <a class="active" href="#"
+          ><i class="fas fa-solid fa-photo-film"></i> Фильмы<span></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fas fa-solid fa-film"></i> Серии<span></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fas fa-solid fa-check"></i> Оригинальные серии<span></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"></i> Трейлер<span></span></a>
+      </li>
+    </div>
+    <div class="cato_bx cato_bx2">
+      <div class="left_cato">
+      <h4>Сортировать по:</h4>
+      <button id="all_btn">Всем</button>
+      <button id="latest_btn">Последним</button>
+      <button id="year">Дате <i class="fas fa-angle-down"></i>
+        <div class="year_bx">
+          <li id="year_btn1">2022</li>
+          <li id="year_btn2">2021</li>
+          <li id="year_btn3">2020</li>
+          <li id="year_btn4">2019</li>
+          <li id="year_btn5">2018</li>
+          <li id="year_btn6">2017</li>
+          <li id="year_btn7">2016</li>
+          <li id="year_btn8">2015</li>
+          <li id="year_btn9">2014</li>
+          <li id="year_btn10">2013</li>
+          <li id="year_btn11">2012</li>
+          <li id="year_btn12">2011</li>
+          <li id="year_btn13">2010</li>
+        </div>
+      </button>
+      <button id="a-z">А-Я <i class="fas fa-angle-down"></i>
+        <div class="year_bx letter_bx">
+          <li>А</li>
+          <li>Б</li>
+          <li>В</li>
+          <li>Г</li>
+          <li>Д</li>
+          <li>Е</li>
+          <li>Ё</li>
+          <li>Ж</li>
+          <li>З</li>
+          <li>И</li>
+          <li>Й</li>
+          <li>К</li>
+          <li>Л</li>
+          <li>М</li>
+          <li>Н</li>
+          <li>О</li>
+          <li>П</li>
+          <li>Р</li>
+          <li>С</li>
+          <li>Т</li>
+          <li>У</li>
+          <li>Ф</li>
+          <li>Х</li>
+          <li>Ц</li>
+          <li>Ч</li>
+          <li>Ш</li>
+          <li>Щ</li>
+          <li>Э</li>
+          <li>Ю</li>
+          <li>Я</li>
+        </div></button>
+    </div>
+  </div>
+  <div class="movie_bx_1 movie_bx_2">
+    <div id="all" class="all"></div>
+    <div id="latest" class="latest"></div>
+    <div id="year_2022" class="year"></div>
+    <div id="year_2021" class="year"></div>
+    <div id="year_2020" class="year"></div>
+    <div id="year_2019" class="year"></div>
+    <div id="year_2018" class="year"></div>
+    <div id="year_2017" class="year"></div>
+    <div id="year_2016" class="year"></div>
+    <div id="year_2015" class="year"></div>
+    <div id="year_2014" class="year"></div>
+    <div id="year_2013" class="year"></div>
+    <div id="year_2012" class="year"></div>
+    <div id="year_2011" class="year"></div>
+    <div id="year_2010" class="year"></div>
+    <div id="letter_1" class="letter"></div>
+    <div id="letter_2" class="letter"></div>
+    <div id="letter_3" class="letter"></div>
+    <div id="letter_4" class="letter"></div>
+    <div id="letter_5" class="letter"></div>
+    <div id="letter_6" class="letter"></div>
+    <div id="letter_7" class="letter"></div>
+    <div id="letter_8" class="letter"></div>
+    <div id="letter_9" class="letter"></div>
+    <div id="letter_10" class="letter"></div>
+    <div id="letter_11" class="letter"></div>
+    <div id="letter_12" class="letter"></div>
+    <div id="letter_13" class="letter"></div>
+    <div id="letter_14" class="letter"></div>
+    <div id="letter_15" class="letter"></div>
+    <div id="letter_16" class="letter"></div>
+    <div id="letter_17" class="letter"></div>
+    <div id="letter_18" class="letter"></div>
+    <div id="letter_19" class="letter"></div>
+    <div id="letter_20" class="letter"></div>
+    <div id="letter_21" class="letter"></div>
+    <div id="letter_22" class="letter"></div>
+    <div id="letter_23" class="letter"></div>
+    <div id="letter_24" class="letter"></div>
+    <div id="letter_25" class="letter"></div>
+    <div id="letter_26" class="letter"></div>
+    <div id="letter_27" class="letter"></div>
+    <div id="letter_28" class="letter"></div>
+    <div id="letter_29" class="letter"></div>
+    <div id="letter_30" class="letter"></div>
+  </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
